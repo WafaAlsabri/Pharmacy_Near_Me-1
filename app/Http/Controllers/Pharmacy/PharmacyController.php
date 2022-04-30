@@ -12,6 +12,15 @@ class PharmacyController extends Controller
         return view('pharmacy.index');
     }
 
+    public function order_replay()
+    {
+        return view('pharmacy.orders');
+    }
+    
+    public function replay_added()
+    {
+        return view('pharmacy.replay_added');
+    }
 
     
 }

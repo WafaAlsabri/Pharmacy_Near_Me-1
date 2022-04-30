@@ -1,6 +1,8 @@
-@extends ('layouts.masterPharmacy')
+@extends('layouts.masterPharmactics')
+@section('pharmacy_pages')
 
-@section('phar_profile_content')
+
+
 
     <div class="container rounded bg-white mt-5 mb-5">
         <div class="row">
@@ -48,4 +50,5 @@
     </div>
     </div>
     </div>
-@stop
+
+@endsection

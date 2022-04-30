@@ -99,6 +99,13 @@ Route::group(['middleware' => 'auth'], function () {
         // Pharmacy Chat
         Route::get('/pharmacy/chat', [ChatController::class, 'index'])->name('pharmacy-chat');
 
+         // Pharmacy replay-order 
+         Route::get('/pharmacy/replay-order', [PharmacyController::class, 'order_replay'])->name('replay-order');
+
+         
+ // Pharmacy replay_added
+ Route::get('/pharmacy/replay_added', [PharmacyController::class, 'replay_added'])->name('replay_added');
+
         // Pharmacy Requests
         Route::get('/pharmacy/requests', [ReplyController::class, 'index'])->name('pharmacy-requests');
         Route::get('/pharmacy/request/{id}', [ReplyController::class, 'showRequest']);
